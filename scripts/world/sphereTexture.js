@@ -93,6 +93,7 @@ export async function applySphereTexture(entity, textureInput, graphicsDevice) {
     if (material.diffuseMap && material.diffuseMap !== texture) {
       material.diffuseMap.destroy();
     }
+    material.useLighting = false;
     material.diffuseMap = texture;
     material.emissiveMap = texture;
     material.emissive.set(1, 1, 1);

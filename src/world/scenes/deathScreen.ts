@@ -10,6 +10,16 @@ export function showDeathScreen(options?: {
   message?: string;
 }) {
 
+  if (options?.app) {
+    options.app.mouse?.off();
+    options.app.keyboard?.off();
+    options.app.touch?.off();
+    const canvas = options.app.graphicsDevice?.canvas as HTMLCanvasElement | undefined;
+    if (canvas) {
+      canvas.style.display = 'none';
+    }
+  }
+
   if (typeof document === 'undefined') return;
   removeBattleHUD();
   document.querySelectorAll('.overlay').forEach((el) => {
