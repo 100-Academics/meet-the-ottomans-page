@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+node_modules/
+
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Generated assets from Tower_00001_.7z
+src/assets/models/npc/boss/Tower_00001_.glb
+src/assets/models/npc/boss/.tower_00001_extracted.json
+public/models/npc/boss/Tower_00001_.glb
+public/models/npc/boss/.tower_00001_extracted.json
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
