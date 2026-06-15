@@ -251,6 +251,6 @@ export const battleSummaries: Record<string, BattleSummary> = {
       sideA: { name: "Side A", strength: 0 },
       sideB: { name: "Side B", strength: 0 }
     },
-    briefingMessage: "The Final Fight, against a foe you may know. Are you ready?"
+    briefingMessage: "The final fight, against a foe you may know. Are you ready? Not even remotely historical."
   }
 };

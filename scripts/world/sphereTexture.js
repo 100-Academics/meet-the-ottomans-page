@@ -94,7 +94,9 @@ export async function applySphereTexture(entity, textureInput, graphicsDevice) {
       material.diffuseMap.destroy();
     }
     material.diffuseMap = texture;
-    material.emissiveMap = null;
+    material.emissiveMap = texture;
+    material.emissive.set(1, 1, 1);
+    material.emissiveIntensity = 1;
     material.diffuse.set(1, 1, 1);
     material.update();
   });
