@@ -6,13 +6,14 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
-node_modules
 node_modules/
-
-dist
-dist-ssr
-*.local
+public/
+scripts/
+src/
+util/
+src/*
+scripts/*
+public/*
 
 # Editor directories and files
 .vscode/*
@@ -24,6 +25,11 @@ src/assets/models/npc/boss/Tower_00001_.glb
 src/assets/models/npc/boss/.tower_00001_extracted.json
 public/models/npc/boss/Tower_00001_.glb
 public/models/npc/boss/.tower_00001_extracted.json
+dist/models/npc/boss/Tower_00001_.glb
+dist/models/npc/boss/.tower_00001_extracted.json
+dist/assets/models/npc/boss/Tower_00001_.glb
+dist/assets/models/npc/boss/.tower_00001_extracted.json
+dist/assets/models/npc/boss/Tower_00001_-DELLBJ6m.glb
 .DS_Store
 *.suo
 *.ntvs*

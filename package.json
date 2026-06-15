@@ -9,7 +9,9 @@
     "prebuild": "node ./scripts/extract-tower.cjs",
     "build": "tsc && vite build",
     "prepreview": "node ./scripts/extract-tower.cjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "ammo.js": "^0.0.10",
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "7zip-bin": "^5.2.0",
+    "gh-pages": "^6.3.0",
     "semver": "^7.7.4",
     "typescript": "~6.0.2",
     "vite": "^8.0.8"
