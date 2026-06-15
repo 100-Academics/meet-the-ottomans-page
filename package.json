@@ -4,11 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predev": "node ./scripts/ensure-node-version.cjs && node ./scripts/extract-tower.cjs",
+    "predev": "node ./scripts/ensure-node-version.cjs",
     "dev": "vite",
-    "prebuild": "node ./scripts/extract-tower.cjs",
     "build": "tsc && vite build",
-    "prepreview": "node ./scripts/extract-tower.cjs",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -20,7 +18,6 @@
     "playcanvas": "^2.17.2"
   },
   "devDependencies": {
-    "7zip-bin": "^5.2.0",
     "gh-pages": "^6.3.0",
     "semver": "^7.7.4",
     "typescript": "~6.0.2",
